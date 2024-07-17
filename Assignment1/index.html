@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaParking</title>
+</head>
+<body>
+    <nav>
+        <h1>MetaParking</h1>
+        <ul>
+            <li><a href="#addEmployee">Add Employee</a></li>
+            <li><a href="#addVehicle">Add Vehicle</a></li>
+            <li><a href="#giveFeedback">Give Feedback</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+        </ul>
+    </nav>
+    <div>
+        <img src="img/parking-bg.jpg" width="100%" alt="">
+    </div>
+    <div>
+        <div id="addEmployee" class="divBody">
+            <h2>Add Employee</h2>
+            <form action="">
+                <input type="text" name="empName" minlength="4" id="empName" placeholder="Employee Name" required />
+                <br>
+                <input type="radio" name="empGender" id="empGender_male" checked /><label for="empGender_male">Male</label>
+                <input type="radio" name="empGender" id="empGender_female" /><label for="empGender_female">Female</label>
+                <br>
+                <input type="email" name="empMail" id="empMail" placeholder="someone@metacube.com" required />
+                <br>
+                <input type="password" name="empPassword" id="empPassword" placeholder="Password" required>
+                <br>
+                <input type="password" name="empConfirmPassword" id="empConfirmPassword" placeholder="Confirm Password" required>
+                <br>
+                <input type="number" name="empPhone" id="empPhone" maxlength="10" minlength="10" placeholder="Mobile Number" required>
+                <br>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+        <hr>
+        <div id="addVehicle" class="divBody">
+            <h2>Add Vehicle</h2>
+            <form action="">
+                <input type="text" name="vehicleName" id="vehicleName" placeholder="Vehicle Name" required />
+                <br>
+                <input type="text" name="vehicleModel" id="vehicleModel" placeholder="Vehicle Model" required />
+                <br>
+                <select name="vehicleType" id="vehicleType" required>
+                    <option>Select Vehicle Type</option>
+                    <option value="2wheeler">2-Wheeler</option>
+                    <option value="4wheeler">4-Wheeler</option>
+                </select>
+                <br>
+                <input type="text" name="vehicleNumber" id="vehicleNumber" placeholder="Vehicle Number" required>
+                <br>
+                <input type="text" name="empId" id="empId" placeholder="Employee ID" required />
+                <br>
+                <textarea name="vehicleIdentity" id="vehicleIdentity" placeholder="Vehicle Identity" required></textarea>
+                <br>
+                <input type="submit" value="Save">
+            </form>
+        </div>
+        <hr>
+        <div id="giveFeedback" class="divBody">
+            <h2>Get in touch</h2>
+            <form>
+                <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                <br>
+                <input type="email" name="emailForm" id="emailForm" placeholder="Email" required>
+                <br>
+                <input type="text" name="subjectForm" id="subjectForm" placeholder="Subject" required>
+                <br>
+                <textarea name="messageForm" id="messageForm" placeholder="Message" required></textarea>
+                <br>
+                <input type="submit" value="Save Email">
+            </form>
+        </div>
+        <hr>
+        <div id="pricing" class="divBody">
+            <h2>Pricing</h2>
+            <div>
+                <section>
+                    <p>CYCLE</p>
+                    <p>$5 Daily</p>
+                    <p>$100 Monthly</p>
+                    <p>$500 Yearly</p>
+                </section>
+                <hr width="95%">
+                <section>
+                    <p>MOTORCYCLE</p>
+                    <p>$10 Daily</p>
+                    <p>$200 Monthly</p>
+                    <p>$1000 Yearly</p>
+                </section>
+                <hr width="95%">
+                <section>
+                    <p>FOUR WHEELERS</p>
+                    <p>$20 Daily</p>
+                    <p>$500 Monthly</p>
+                    <p>$3500 Yearly</p>
+                </section>
+            </div>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>
