@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+nav{
+    background-color: #1a8fe5;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 10px;
+    align-items: center;
+}
+
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+nav ul li a:hover{
+    background: white;
+    color: #1a8fe5;
+    transition: all 0.8s linear;
+}
+
+.divBody{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #8888;
+    margin: 10px 5px;
+}
+
+.boxHeading{
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 5px;
+    border: 2px #000000 solid;
+    background-color: #1a8fe5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointers;
+}
+
+.pricingBody{
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.pricingBody section{
+    border: 2px solid black;
+    border-radius: 50%;
+    max-width: 350px;
+    min-width: 280px;
+    height: 230px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.pricingBody section:hover{
+    background-color: #1a8fe5;
+    color: white;
+    transition: all 0.8s linear;
+}
+
+.sectionHead{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.divBodyContainer{
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+}
+
+.form-input{
+    border: 2px transparent solid;
+    border-bottom: 2px #1a8fe5 solid;
+    margin-bottom: 8px;
+    font-size: larger;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.marginHeading{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.marginHeading h5{
+    margin-bottom: 20px;
+}
+
+.form-input[type=submit]{
+    border: 2px #1a8fe5 solid;
+    font-size: larger;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.form-input[type=radio]{
+    font-size: larger;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+.form-input[type=radio]+label{
+    font-size: larger;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 5px;
+}
+
+.itemCenters{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.accordianInput:checked~.divBodyContainer, .accordianInput:checked~.pricingBody{
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+    transition: all 9s linear;
+}

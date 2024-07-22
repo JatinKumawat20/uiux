@@ -1,9 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MetaParking</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.10/css/all.css">
 </head>
 <body>
     <nav>
@@ -20,89 +23,125 @@
     </div>
     <div>
         <div id="addEmployee" class="divBody">
-            <h2>Add Employee</h2>
-            <form action="">
-                <input type="text" name="empName" minlength="4" id="empName" placeholder="Employee Name" required />
-                <br>
-                <input type="radio" name="empGender" id="empGender_male" checked /><label for="empGender_male">Male</label>
-                <input type="radio" name="empGender" id="empGender_female" /><label for="empGender_female">Female</label>
-                <br>
-                <input type="email" name="empMail" id="empMail" placeholder="someone@metacube.com" required />
-                <br>
-                <input type="password" name="empPassword" id="empPassword" placeholder="Password" required>
-                <br>
-                <input type="password" name="empConfirmPassword" id="empConfirmPassword" placeholder="Confirm Password" required>
-                <br>
-                <input type="number" name="empPhone" id="empPhone" maxlength="10" minlength="10" placeholder="Mobile Number" required>
-                <br>
-                <input type="submit" value="Save">
-            </form>
+            <input type="checkbox" hidden class="accordianInput" name="accordian" id="accordian1"> <label for="accordian1"><h2 class="boxHeading">Add Employee</h2></label>
+            <div class="divBodyContainer">
+                <div>
+                    <img src="img/adduser.png" alt="">
+                </div>
+                <div>
+                    <form action="">
+                        <input class="form-input" type="text" name="empName" minlength="4" id="empName" placeholder="Employee Name" required />
+                        <br>
+                        <input type="radio" class="form-input" name="empGender" id="empGender_male" checked /><label for="empGender_male">Male</label>
+                        <input type="radio" class="form-input" name="empGender" id="empGender_female" /><label for="empGender_female">Female</label>
+                        <br>
+                        <input class="form-input" type="email" name="empMail" id="empMail" placeholder="someone@metacube.com" required />
+                        <br>
+                        <input class="form-input" type="password" name="empPassword" id="empPassword" placeholder="Password" required>
+                        <br>
+                        <input class="form-input" type="password" name="empConfirmPassword" id="empConfirmPassword" placeholder="Confirm Password" required>
+                        <br>
+                        <input class="form-input" type="number" name="empPhone" id="empPhone" maxlength="10" minlength="10" placeholder="Mobile Number" required>
+                        <br>
+                        <div class="itemCenters">
+                            <input class="form-input" type="submit" value="Save">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <hr>
         <div id="addVehicle" class="divBody">
-            <h2>Add Vehicle</h2>
-            <form action="">
-                <input type="text" name="vehicleName" id="vehicleName" placeholder="Vehicle Name" required />
-                <br>
-                <input type="text" name="vehicleModel" id="vehicleModel" placeholder="Vehicle Model" required />
-                <br>
-                <select name="vehicleType" id="vehicleType" required>
-                    <option>Select Vehicle Type</option>
-                    <option value="2wheeler">2-Wheeler</option>
-                    <option value="4wheeler">4-Wheeler</option>
-                </select>
-                <br>
-                <input type="text" name="vehicleNumber" id="vehicleNumber" placeholder="Vehicle Number" required>
-                <br>
-                <input type="text" name="empId" id="empId" placeholder="Employee ID" required />
-                <br>
-                <textarea name="vehicleIdentity" id="vehicleIdentity" placeholder="Vehicle Identity" required></textarea>
-                <br>
-                <input type="submit" value="Save">
-            </form>
+            <input type="checkbox" hidden class="accordianInput" name="accordian" id="accordian2"> <label for="accordian2"><h2 class="boxHeading">Add Vehicle</h2></label>
+            <div class="divBodyContainer">
+                <div>
+                    <img src="img/addVehicle.png" height="250" alt="">
+                </div>
+                <div>
+                    <form action="">
+                        <input class="form-input" type="text" name="vehicleName" id="vehicleName" placeholder="Vehicle Name" required />
+                        <br>
+                        <input class="form-input" type="text" name="vehicleModel" id="vehicleModel" placeholder="Vehicle Model" required />
+                        <br>
+                        <select class="form-input" name="vehicleType" id="vehicleType" required>
+                            <option>Select Vehicle Type</option>
+                            <option value="2wheeler">2-Wheeler</option>
+                            <option value="4wheeler">4-Wheeler</option>
+                        </select>
+                        <br>
+                        <input class="form-input" type="text" name="vehicleNumber" id="vehicleNumber" placeholder="Vehicle Number" required>
+                        <br>
+                        <input class="form-input" type="text" name="empId" id="empId" placeholder="Employee ID" required />
+                        <br>
+                        <textarea class="form-input" name="vehicleIdentity" id="vehicleIdentity" placeholder="Vehicle Identity" required></textarea>
+                        <br>
+                        <div class="itemCenters">
+                            <input class="form-input" type="submit" value="Save">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <hr>
         <div id="giveFeedback" class="divBody">
-            <h2>Get in touch</h2>
-            <form>
-                <input type="text" name="fullName" id="fullName" placeholder="Full Name" required>
-                <br>
-                <input type="email" name="emailForm" id="emailForm" placeholder="Email" required>
-                <br>
-                <input type="text" name="subjectForm" id="subjectForm" placeholder="Subject" required>
-                <br>
-                <textarea name="messageForm" id="messageForm" placeholder="Message" required></textarea>
-                <br>
-                <input type="submit" value="Save Email">
-            </form>
+            <input type="checkbox" hidden class="accordianInput" name="accordian" id="accordian3"> <label for="accordian3"><h2 class="boxHeading">Get in touch</h2></label>
+            <div class="divBodyContainer">
+                <div class="text-center">
+                    <h4>DON'T BE SHY</h4>
+                    <p>Feel free to get in touch with us. We are always<br> available to solving your query.</p>
+                    <div class="marginHeading">
+                        <h5>Contact Links</h5>
+                        <a href="mailto:jatin.kumawat@metacube.com"><i class='fas fa-envelope' style='font-size:50px'></i></a>
+                        <a href="tel:+917062039927"><i class='fas fa-phone' style='font-size:50px'></i></a>
+                    </div>
+                </div>
+                <div>
+                    <form>
+                        <input class="form-input" type="text" name="fullName" id="fullName" placeholder="Full Name" required>
+                        <br>
+                        <input class="form-input" type="email" name="emailForm" id="emailForm" placeholder="Email" required>
+                        <br>
+                        <input class="form-input" type="text" name="subjectForm" id="subjectForm" placeholder="Subject" required>
+                        <br>
+                        <textarea class="form-input" name="messageForm" id="messageForm" placeholder="Message" required></textarea>
+                        <br>
+                        <div class="itemCenters">
+                            <input class="form-input" type="submit" value="Save Email">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <hr>
         <div id="pricing" class="divBody">
-            <h2>Pricing</h2>
-            <div>
+            <input type="checkbox" hidden class="accordianInput" name="accordian" id="accordian4"> <label for="accordian4"><h2 class="boxHeading">Pricing</h2></label>
+            <div class="pricingBody">
                 <section>
-                    <p>CYCLE</p>
-                    <p>$5 Daily</p>
-                    <p>$100 Monthly</p>
-                    <p>$500 Yearly</p>
+                    <div>
+                        <p class="sectionHead">CYCLE</p>
+                        <i class='fas fa-bicycle' style='font-size:50px'></i>
+                        <p>$5 Daily</p>
+                        <p>$100 Monthly</p>
+                        <p>$500 Yearly</p>
+                    </div>
                 </section>
-                <hr width="95%">
                 <section>
-                    <p>MOTORCYCLE</p>
-                    <p>$10 Daily</p>
-                    <p>$200 Monthly</p>
-                    <p>$1000 Yearly</p>
+                    <div>
+                        <p class="sectionHead">MOTORCYCLE</p>
+                        <i class='fas fa-motorcycle' style='font-size:50px'></i>
+                        <p>$10 Daily</p>
+                        <p>$200 Monthly</p>
+                        <p>$1000 Yearly</p>
+                    </div>
                 </section>
-                <hr width="95%">
                 <section>
-                    <p>FOUR WHEELERS</p>
-                    <p>$20 Daily</p>
-                    <p>$500 Monthly</p>
-                    <p>$3500 Yearly</p>
+                    <div>
+                        <p class="sectionHead">FOUR WHEELERS</p>
+                        <i class='fas fa-car' style='font-size:50px'></i>
+                        <p>$20 Daily</p>
+                        <p>$500 Monthly</p>
+                        <p>$3500 Yearly</p>
+                    </div>
                 </section>
             </div>
         </div>
-        <hr>
     </div>
 </body>
 </html>
