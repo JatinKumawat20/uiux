@@ -1,0 +1,384 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.hometop{
+    background-image: url('../images/homebg.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar img{
+    max-height: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    display: block;
+    margin: 10px 10px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar:first-child(ul){
+    font-weight: bold;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.mt-5{
+    margin-top: 20px;
+}
+
+.ms-4{
+    margin-left: 8px;
+}
+
+.hometopheading{
+    word-wrap: break-word;
+    max-width: 350px;
+}
+
+.hometopheading h1{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.dlw-btn{
+    padding: 10px;
+    background-color: #fc6a45;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.6rem;
+    width: 80px;
+    font-weight: bold;
+}
+
+.ftu-btn{
+    padding: 10px;
+    background-color: #4563c5;
+    border: 2px solid transparent;
+    color: white;
+    border-radius: 4px;
+    font-size: 0.6rem;
+    width: 80px;
+    font-weight: bold;
+}
+
+.homeBody{
+    margin-top: 10px;
+    padding: 10px 40px;
+}
+
+.homeBody div{
+    text-align: center;
+}
+
+.homeBody div h4{
+    color: #6388fb;
+    margin-bottom: 3px;
+    font-size: 2rem;
+}
+
+.homeBody div p{
+    color: grey;
+}
+
+.mb-5{
+    margin-bottom: 10px;
+}
+
+.subheadfeature{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.subheadfeature div{
+    width: 400px;
+}
+
+.subheadfeature div h5{
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.subheadfeature div p{
+    word-wrap: break-word;
+    text-align: left;
+    margin-left: 70px;
+}
+
+#usability h5:before{
+    content:"";
+    background-image: url("../images/diamond.png");
+    background-size: 100% 100%;
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    position:relative;
+    top:30px;
+ }
+
+#parallax h5:before{
+    content:"";
+    background-image: url("../images/layersp.png");
+    background-size: 100% 100%;
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    position:relative;
+    top:30px;
+ }
+#unlimites h5:before{
+    content:"";
+    background-image: url("../images/document.png");
+    background-size: 100% 100%;
+    width: 60px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    position:relative;
+    top:30px;
+ }
+
+ .downloaddiv{
+    background-color: #6388fb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    overflow: hidden;
+ }
+ .downloadtext{
+    padding: 50px;
+    min-width: 350px;
+    max-width: 500px;
+    /* margin-left: 90px; */
+    color: white;
+ }
+
+ .downloadtext h4{
+    font-size: 1.9rem;
+    padding: 0;
+    margin: 0;
+ }
+
+ .downloadtext p{
+    max-width: 330px;
+ }
+
+ .imageRelative{
+    position: relative;
+    margin-top: 50px;
+ }
+
+ .imageRelative p{
+    position: absolute;
+    z-index: -1;
+    right: -18.7rem;
+    transform: rotate(90deg);
+    font-size: 11.5rem;
+    top: -40px;
+ }
+ .screenshotDiv{
+    padding: 0px 70px;
+ }
+
+ .imageTextDiv{
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+ }
+
+ .imageDesc{
+    text-align: left !important;
+ }
+
+ .imageDesc h5{
+    font-size: 1.3rem;
+    padding: 0px 2px;
+    margin: 0px 2px;
+ }
+
+ #rainytext{
+    right: -15rem;
+ }
+
+ .imageDesc p{
+    word-wrap: break-word;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+ }
+
+ .reviewText{
+    text-align: left;
+    max-width: 360px;
+    min-width: 360px;
+    word-wrap: break-word;
+ }
+
+ .flex-row{
+    text-align: left;
+ }
+
+ .reviewText h6{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 0.91rem;
+    word-wrap: break-word;
+ }
+
+ .reviewText p{
+    text-align: left;
+    font-size: 0.8rem;
+ }
+
+ .reviewText::after{
+    content: '”';
+    position: relative;
+    left: 9.5rem;
+    top: -1.5rem;
+    color: #6388fb;
+    font-size: 3rem;
+ }
+
+ .reviewText::before{
+    content: '“';
+    position: relative;
+    left: -10.5rem;
+    top: 1.5rem;
+    color: #6388fb;
+    font-size: 3rem;
+ }
+
+ .flex-row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+ .downloadimage{
+    padding-top: 80px;
+    margin-left: 60px;
+    width: fit-content;
+ }
+
+ #appStore{
+    margin-right: 5px;
+ }
+
+ .footer{
+    background-color: #383a53;
+    padding: 5px 0px;
+ }
+
+ footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #a2a5ba;
+    margin: 0px 9rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a2a5ba;
+ }
+
+ footer div ul li{
+    display: block;
+    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 0.8rem;
+ }
+
+ footer div ul {
+    display: flex;
+ }
+
+ footer div ul li a{
+    color: #a2a5ba;
+    text-decoration: none;
+ }
+
+ footer div ul li a i{
+    margin-left: 10px;
+    font-weight: normal;
+ }
+
+ .footer div{
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #a2a5ba;
+    font-size: 0.7rem;
+ }
+
+ .imageSlider{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    margin-top: 90px;
+ }
+
+ .righttiltImg{
+    transform: perspective(700px) scaleY(0.9) scaleZ(1)  rotateY(20deg)  ;
+    position: absolute;
+    left: 11.2rem;
+    z-index: -1;
+}
+
+.morerighttiltImg{
+    transform: perspective(700px) scaleY(0.8) scaleZ(1.5)  rotateY(25deg)  ;
+    position: absolute;
+    left: 2rem;
+    z-index: -2;
+}
+
+.lefttiltImg{
+    transform: perspective(700px) scaleY(0.9) scaleZ(1)  rotateY(-20deg)  ;
+    position: absolute;
+    right: 9rem;
+    z-index: -1;
+}
+
+.morelefttiltImg{
+    transform: perspective(700px) scaleY(0.8) scaleZ(1.5)  rotateY(-25deg)  ;
+    position: absolute;
+    right: 3rem;
+    z-index: -2;
+}
