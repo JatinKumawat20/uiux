@@ -233,6 +233,10 @@ body{
     margin: 0px 2px;
  }
 
+ .imageDesc img{
+    margin-bottom: 30px;
+ }
+
  #rainytext{
     right: -15rem;
  }
@@ -296,6 +300,7 @@ body{
     padding-top: 80px;
     margin-left: 60px;
     width: fit-content;
+    margin-bottom: -5px;
  }
 
  #appStore{
@@ -355,17 +360,40 @@ body{
     margin-top: 90px;
  }
 
+ .imageSlider button{
+    background-color: transparent;
+    border: 2px solid transparent;
+ }
+
+ #lefttogglebtn{
+    position: absolute;
+    left: 0;
+    top:45%;
+    color: #6388fb;
+ }
+
+ #righttogglebtn{
+    position: absolute;
+    right: 0;
+    top:45%;
+    color: #6388fb;
+ }
+
+ .imageSlider img{
+    box-shadow: 1px 8px 5px rgb(205, 211, 212);
+ }
+
  .righttiltImg{
     transform: perspective(700px) scaleY(0.9) scaleZ(1)  rotateY(20deg)  ;
     position: absolute;
-    left: 11.2rem;
+    left: 11rem;
     z-index: -1;
 }
 
 .morerighttiltImg{
     transform: perspective(700px) scaleY(0.8) scaleZ(1.5)  rotateY(25deg)  ;
     position: absolute;
-    left: 2rem;
+    left: 1rem;
     z-index: -2;
 }
 
@@ -379,6 +407,59 @@ body{
 .morelefttiltImg{
     transform: perspective(700px) scaleY(0.8) scaleZ(1.5)  rotateY(-25deg)  ;
     position: absolute;
-    right: 3rem;
+    right: 1rem;
     z-index: -2;
+}
+
+.textCircle{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 150px;
+    right: -45px;
+    color: white;
+}
+
+.tempCircle{
+    
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 300px;
+    left: -25px;
+    color: white;
+}
+
+#cloudycircle{
+    background-color: #fced6e;
+}
+
+#cloudytempcircle{
+    background-color: #6388fb;
+}
+
+#sunnycircle{
+    background-color: #f2a054;
+}
+
+#sunnytempcircle{
+    background-color: #fc6a45;
+}
+
+#rainycircle{
+    background-color: #b7fbee;
+}
+
+#rainytempcircle{
+    background-color:#7691c6 ;
 }
